@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Habibi&display=swap');
+
+:root{
+    --pich: #c4a586;
+    --black: #000000;
+    --gray: #72696a;
+    --brown: #d1a070;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1300px;
+    margin: 0 auto;
+}
+/* =====================navbar start===================== */
+nav .nav_wapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+nav .nav_wapper ul{
+    display: flex;
+    gap: 45px;
+}
+nav .nav_wapper ul li{
+    list-style: none;
+}
+nav .nav_wapper ul li a{
+    text-decoration: none;
+    font-family: "Gupter", serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--black);
+    position: relative;
+}
+nav .nav_wapper ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: var(--black);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+nav .nav_wapper ul li .active::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--black);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+}
+nav .nav_wapper ul li a:hover::after{
+    width: 100%;
+}
+nav .nav_wapper ol{
+    display: flex;
+    gap: 35px;
+}
+nav .nav_wapper ol li{
+    list-style: none;
+}
+nav .nav_wapper ol li i{
+    color: var(--black);
+    font-size: 22px;
+}
+nav .nav_wapper ol .trash{
+    position: relative;
+}
+nav .nav_wapper ol .trash::after{
+    content: '';
+    width: 11px;
+    height: 11px;
+    background: #fe0303;
+    border-radius: 50%;
+    top: -9px;
+    right: -8px;
+    position: absolute;
+}
+/* =====================navbar end===================== */
+/* =====================banner start===================== */
+#banner .banner_wrapper{
+    display: flex;
+    margin-top: 72px;
+    margin-bottom: 30px;
+}
+#banner .left{
+    width: 65%;
+}
+#banner .left h1{
+    font-family: "Habibi", serif;
+    font-size: 65px;
+    font-weight: 400;
+    line-height: 76px;
+    letter-spacing: 2%;
+}
+#banner .left p{
+    font-family: "Habibi", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2%;
+    width: 455px;
+    margin: 43px 0;
+}
+#banner .left p span{
+    display: inline-block;
+    margin-top: 65px;
+}
+#banner .left a{
+    font-family: "Gupter", serif;
+    font-size: 27px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    padding: 30px 70px;
+    color: #FFFFFF;
+    background: var(--pich);
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid var(--pich);
+}
+#banner .left .side{
+    margin-right: 33px;
+}
+#banner .left a:hover{
+    background: transparent;
+    color: var(--pich);
+    border: 1px solid var(--pich);
+}
+#banner .right{
+    width: 35%;
+    margin-top: 30px;
+}
+/* =====================banner end===================== */
+/* =====================property start===================== */
+#property h2{
+    font-family: "Gupter", serif;
+    font-size: 23px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--black);
+    text-align: center;
+    margin-bottom: 91px;
+}
+#property nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+#property nav ul li{
+    list-style: none;
+}
+#property nav ul li a{
+    text-decoration: none;
+    font-family: "Gupter", serif;
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--gray);
+}
+#property .property_wrapper{
+    display: flex;
+    margin-top: 66px;
+    gap: 50px;
+}
+#property .property_wrapper .left{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background: #ffffff;
+    gap: 200px;
+}
+#property .property_wrapper .left h3{
+    font-family: "Gupter", serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--black);
+}
+#property .property_wrapper .left p{
+    margin-top: 41px;
+    font-family: "Gupter", serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    color: var(--pich);
+}
+#property .property_wrapper .right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background: var(--pich);
+}
+#property .property_wrapper .right h3{
+    font-family: "Gupter", serif;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--black);
+    padding-left: 96px;
+    padding-right: 95px;
+}
+#property .property_wrapper .right p{
+    margin-top: 41px;
+    font-family: "Gupter", serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    color: var(--gray);
+    padding-left: 96px;
+    padding-right: 95px;
+}
+#property .property_wrapper .right img{
+    padding-top: 43px;
+    padding-bottom: 80px;
+}
+/* =====================property end===================== */
+/* =====================product start===================== */
+#product nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin: 150px 78px 77px 8px;
+}
+#product nav h2{
+    font-family: "Gupter", serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--black);
+}
+#product nav ul{
+    display: flex;
+    gap: 85px;
+    margin-bottom: -20px;
+}
+#product nav ul li{
+    list-style: none;
+}
+#product nav ul li a{
+    text-decoration: none;
+    font-family: "Gupter", serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    color: var(--black);
+}
+#product nav ul button {
+    border: none;
+    background: transparent;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    color: var(--pich);
+}
+#product nav ul button a{
+    text-decoration: none;
+    font-family: "Gupter", serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    color: var(--pich);
+    padding-right: 10px;
+}
+#product .product_wrapper .product_top{
+    display: flex;
+    justify-content: space-between;
+}
+#product .product_wrapper .product_top h4{
+    width: 208px;
+    background: var(--brown);
+    border-radius: 20px;
+    padding: 20px 40px;
+    position: absolute;
+    margin-left: 100px;
+}
+#product .product_wrapper .product_top h4 i{
+    padding-left: 10px;
+}
+#product .product_wrapper .product_top .tag{
+    position: relative;
+    margin-top: 36px;
+    width: 400px;
+    background: rgba(196, 165, 134, 63%);
+}
+#product .product_wrapper .product_top .tag p{
+    padding: 36px 8px 39px 84px;
+    font-family: "Habibi", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 76px;
+    letter-spacing: 2%;
+}
+#product .product_wrapper .product_top .tag blockquote{
+    padding: 8px 0 158px 140px;
+    font-family: "Gupter", serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--black);
+}
+#product .product_wrapper .product_top .tag blockquote del{
+    padding-left: 41px;
+    color: var(--gray);
+}
+#product .product_wrapper .product_top img{
+    position: absolute;
+    margin-top: -143px;
+    padding-left: 70px;
+}
+#product .product_wrapper .product_top .top{
+    margin-top: 20px;
+}
+#product .product_wrapper .product_top .top img{
+    padding-left: 90px;
+}
+#product .product_wrapper .product_bottom{
+    margin-top: 255px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 350px;
+}
+#product .product_wrapper .product_bottom h4{
+    width: 208px;
+    background: var(--brown);
+    border-radius: 20px;
+    padding: 20px 40px;
+    position: absolute;
+    margin-left: 100px;
+}
+#product .product_wrapper .product_bottom h4 i{
+    padding-left: 10px;
+}
+#product .product_wrapper .product_bottom .tag{
+    position: relative;
+    margin-top: 36px;
+    width: 400px;
+    background: rgba(196, 165, 134, 63%);
+}
+#product .product_wrapper .product_bottom .tag p{
+    padding: 36px 8px 39px 84px;
+    font-family: "Habibi", serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 76px;
+    letter-spacing: 2%;
+}
+#product .product_wrapper .product_bottom .tag blockquote{
+    padding: 8px 0 158px 140px;
+    font-family: "Gupter", serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    color: var(--black);
+}
+#product .product_wrapper .product_bottom .tag blockquote del{
+    padding-left: 41px;
+    color: var(--gray);
+}
+#product .product_wrapper .product_bottom img{
+    position: absolute;
+    margin-top: -143px;
+    padding-left: 70px;
+}
+#product .product_wrapper .product_bottom .bottom{
+    margin-top: 20px;
+}
+#product .product_wrapper .product_bottom .bottom img{
+    padding-left: 90px;
+}
+/* =====================product end===================== */
+/* =====================inspection part start==================== */
+#inspection .inspection_wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 105px;
+}
+.container2{
+    width: 1146px;
+}
+#inspection .left{
+    margin-left: 80px;
+}
+#inspection .inspection_wrapper .right h2{
+    font-family: "Gupter", serif;width: 460px;
+    font-size: 55px;
+    font-weight: 500;
+    color: var(--black);
+    margin-top: 71px;
+}
+#inspection .inspection_wrapper .right p{
+    width: 559px;
+    font-family: "Habibi", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2%;
+    margin-top: 34px;
+}
+#inspection .inspection_wrapper .right .rate{
+    display: flex;
+    align-items: center;
+    width: 345px;
+}
+#inspection .inspection_wrapper .right .rate .name{
+    margin: 83px 0 63px 112px;
+}
+#inspection .inspection_wrapper .right .rate .name p{
+    font-family: "Gupter", serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.3px;
+    letter-spacing: 2%;
+    color: var(--black);
+}
+#inspection .inspection_wrapper .right .rate .name h6{
+    font-family: "Habibi", serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 76px;
+    letter-spacing: 2%;
+}
+#inspection .inspection_wrapper .right .rate ul{
+    display: flex;
+    margin-left: -300px;
+    margin-top: -20px;
+}
+#inspection .inspection_wrapper .right .rate ul li{
+    list-style: none;
+    color: var(--pich);
+}
+#inspection .inspection_wrapper .right .rate ul .active{
+    color: var(--gray);
+}
+#inspection .inspection_wrapper .right .arrow{
+    margin-left: 470px;
+    margin-top: -70px;
+}
+#inspection .inspection_wrapper .right .arrow i{
+    width: 33px;
+    height: 33px;
+    gap: 18px;
+}
+#inspection .inspection_wrapper .right .arrow i:hover{
+    color: var(--pich);
+}
+#inspection .last_photo{
+    width: 456px;
+    display: flex;
+    gap: 36px;
+    justify-content: center;
+    margin: 54px 480px 95px 290px;
+}
+/* =====================inspection part end===================== */
+/* =====================top footer start===================== */
+#banner .container2 .footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+#banner .container2 .footer_wrapper .footer_right .see_contain{
+    display: flex;
+    align-items: center;
+    margin-top: 114px;
+    margin-left: 76px;
+    width: 369px;
+    gap: 23px;
+}
+#banner .container2 .footer_wrapper .footer_right .see_contain p{
+    margin: 33px 0 35px 9px;
+}
+#banner .footer_right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#banner .footer_right .footer_img{
+    width: 219px;
+    height: 294px;
+    margin-top: -100px;
+}
+#banner .container2 .footer_wrapper .footer_left{
+    margin-top: 62px;
+    margin-left: 108px;
+}
+#banner .container2 .footer_wrapper .footer_left a{
+    border: 1px solid var(--pich);
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--brown);
+    font-weight: 700;
+    letter-spacing: 2%;
+}
+#banner .container2 .footer_wrapper .footer_left h2{
+    font-family: "Gupter", serif;
+    font-size: 30px;
+    line-height: 39px;
+    letter-spacing: 2%;
+    color: var(--black);
+    margin-top: 25px;
+    width: 358px;
+}
+#banner .container2 .footer_wrapper .footer_left input{
+    padding: 30px 100px 38px 26px;
+    margin-top: 16px;
+    width: 500px;
+    background: #d9d9d9;
+    border: none;
+    border-radius: 13px;
+    position: relative;
+}
+#banner .container2 .footer_wrapper .footer_left .email_box input::placeholder{
+    font-family: "Gupter", serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    line-height: 20px;
+    color: var(--black);
+}
+#banner .container2 .footer_wrapper .footer_left .email_box button{
+    background: var(--brown);
+    border: none;
+    padding: 22px 42px;
+    border-radius: 13px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 2%;
+    color: white;
+    top: -75px;
+    left: 220px;
+}
+#banner .container2 .footer_wrapper .footer_left .email_box button span{
+    background: var(--pich);
+    border: none;
+    padding: 22px 42px;
+    border-radius: 0 13px 13px 0;
+    position: absolute;
+    right: -78px;
+    top: 0;
+    color: var(--black);
+}
+/* =====================top footer end===================== */
+/* =====================footer start===================== */
+#bottom .footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 114px;
+    margin-bottom: 37px;
+}
+#bottom .footer_wrapper img{
+    margin-left: 110px;
+    width: 56px;
+    height: 56px;
+}
+#bottom .footer_wrapper ul{
+    display: flex;
+    justify-content: space-between;
+    width: 527px;
+    margin-right: 250px;
+}
+#bottom .footer_wrapper ul li{
+    list-style: none;
+}
+#bottom .footer_wrapper ul li a{
+    text-decoration: none;
+    font-family: "Gupter", serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    line-height: 20px;
+    color: var(--black);
+    position: relative;
+}
+#bottom .footer_wrapper ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--black);
+    left: 0;
+    bottom: -2px;
+    position: absolute;
+    transition: 0.4s;
+}
+#bottom .footer_wrapper ul li a:hover::after{
+    width: 100%;
+}
+#bottom .footer_wrapper ul li .active::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: var(--black);
+    left: 0;
+    bottom: -2px;
+    position: absolute;
+    transition: 0.4s;
+}
+#bottom .footer_wrapper .footer_icon{
+    margin-right: -120px;
+    color: #B99272;
+}
+#bottom h3{
+    text-align: center;
+    font-family: "Gupter", serif;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2%;
+    line-height: 20px;
+    color: var(--black);
+}
+#bottom h3 span{
+    color: var(--pich);
+}
+/* =====================footer end===================== */
